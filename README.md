@@ -10,7 +10,9 @@ The following environment variables can be set:
 	OPENCONNECT_USER=<Username>
 	OPENCONNECT_PASSWORD=<Password>
 	OPENCONNECT_MFA_CODE=<Multi-Factor authentication code>
-	OPENCONNECT_OPTIONS=<Openconnect [command line options](https://www.infradead.org/openconnect/manual.html)>
+	OPENCONNECT_OPTIONS=<Openconnect command line options>
+
+Available [command line options](https://www.infradead.org/openconnect/manual.html).
 
 If you leave `OPENCONNECT_PASSWORD` unset, you will get prompted when starting up the container.
 
