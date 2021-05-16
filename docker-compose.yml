@@ -1,0 +1,15 @@
+version: '3'
+services:
+  openconnect:
+    image: cavemandaveman/openconnect:latest
+    container_name: openconnect
+    environment:
+      - OPENCONNECT_URL=vpn.example.com
+      - OPENCONNECT_USER=ocuser
+      - OPENCONNECT_PASSWORD=ocpassword
+      - OPENCONNECT_MFA_CODE=ocmfacode
+      - OPENCONNECT_OPTIONS="--timestamp --verbose"
+    ports:
+      - 1080:1080
+      - 8888:8888
+    privileged: true
